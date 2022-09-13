@@ -1,5 +1,5 @@
 body {
-    color: white;
+    color: white !important;
     background-color: black;
     text-align: center;
     margin: 0;
