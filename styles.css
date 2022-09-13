@@ -3,7 +3,14 @@ body {
     background-color: black;
     text-align: center;
     margin: 0;
-    background: white url("Images/bscfk22t47.gif")
+    background-image: url("bscfk22t47.gif");
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+}
+div, iframe {
+    text-align:left;
 }
 p {
     color: white;
