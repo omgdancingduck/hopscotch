@@ -1,10 +1,14 @@
 <html lang="en">
 
-    <div style="display:none">
-        <audio controls autoplay loop>
-            <source src="RoomOfDog.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-          </audio>
+    <div style="display:none;">
+        <audio src="pinkandblue.mp4" id="pinkandblueaudio"></audio>
+        <audio src="truegold.mp4" id="truegoldaudio"></audio>
+    </div>
+
+    <div style="padding-left:50px;padding-top:40px;">
+        <img src="pinkandblue.gif" style="height:100px;float:left" id='pinkandblue' onclick="playpinkandblue()"/>
+        <img src="lesydancing.gif" style=""/>
+        <img src="truegold.gif" style="height:100px;border:0px;float:left" id='truegold' onclick="playtruegold()"/>
     </div>
 
     <head>
@@ -14,12 +18,53 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <img src="lesydancing.gif" />
         <h1>Lol!!!</h1>
         <p>Loldsfksldk</p>
         <p>Loldsfksldk</p>
         <p>Loldsfksldk</p>
+        <div style="float:right;">
+            <img src="lesypeek.png" style="position:fixed;bottom:0px;right:0%;" id="peeking"/>
+        </div>
     </body>
+
+    <script>
+        var lesypeek = document.getElementById('peeking');
+        var lesypeek1 = 0;
+
+        var pinkandblue = document.getElementById('pinkandblue');
+        var truegold = document.getElementById('truegold');
+        var pinkandblueA = document.getElementById('pinkandblueaudio');
+        var truegoldA = document.getElementById('truegoldaudio');
+
+        lesypeek.addEventListener('click', function(){
+            changePeek();
+        });
+        pinkandblue.addEventListener('click', function(){
+            playpinkandblue();
+        })
+        truegold.addEventListener('click', function(){
+            playtruegold();
+        })
+        
+
+        function changePeek(){
+            if (lesypeek1 == 0){
+                lesypeek.src='lesyGRRR.png';
+                lesypeek1 = 1;
+            }
+            else if (lesypeek1 == 1){
+                lesypeek.src='lesypeek.png';
+                lesypeek1 = 0;
+            }
+        }
+
+        function playpinkandblue(){
+            pinkandblueA.play();
+        }
+        function playtruegold(){
+            truegoldA.play();
+        }
+    </script>
 </html>
 <!-- 
     git add .
