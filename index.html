@@ -6,6 +6,7 @@
     <div style="display:none;">
         <audio src="pinkandblue.mp4" id="pinkandblueaudio" style="display:none;"></audio>
         <audio src="truegold.mp4" id="truegoldaudio"></audio>
+        <audio src="quack.mp3" id="quackaudio"></audio>
     </div>
 
     <div style="padding-left:50px;padding-top:40px;">
@@ -39,6 +40,7 @@
         var truegold = document.getElementById('truegold');
         var pinkandblueA = document.getElementById('pinkandblueaudio');
         var truegoldA = document.getElementById('truegoldaudio');
+        var quackA = document.getElementById('quackaudio');
 
         lesypeek.addEventListener('click', function(){
             changePeek();
@@ -55,10 +57,12 @@
             if (lesypeek1 == 0){
                 lesypeek.src='lesyGRRR.png';
                 lesypeek1 = 1;
+                quackA.play();
             }
             else if (lesypeek1 == 1){
                 lesypeek.src='lesypeek.png';
                 lesypeek1 = 0;
+                quackA.play();
             }
         }
 
@@ -67,6 +71,9 @@
         }
         function playtruegold(){
             truegoldA.play();
+        }
+        function playquack(){
+            quackA.play();
         }
     </script>
 </html>
