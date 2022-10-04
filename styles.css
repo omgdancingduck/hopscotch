@@ -12,8 +12,12 @@ div, iframe {
     text-align:left;
 }
 p {
-    color: blue !important;
+    color: blue;
     font-size: 30px !important;
     float:left !important;
     margin-left: 155px !important;
+}
+p#iamcool {
+    color: black;
+    padding-left:15px;
 }
