@@ -18,6 +18,6 @@ p {
     margin-left: 155px !important;
 }
 p#iamcool {
-    color: black;
+    color: black !important;
     padding-left:15px;
 }
